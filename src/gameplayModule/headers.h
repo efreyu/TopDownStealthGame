@@ -1,0 +1,6 @@
+#ifndef SWIPERPG_HEADERS_H
+#define SWIPERPG_HEADERS_H
+
+
+
+#endif //SWIPERPG_HEADERS_H
