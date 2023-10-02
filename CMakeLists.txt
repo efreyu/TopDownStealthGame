@@ -27,7 +27,7 @@ if ( APPLE )
 endif()
 
 # Main project information
-project( SwipeRpg
+project( TopDownStealthProject
     LANGUAGES
         CXX
     VERSION
