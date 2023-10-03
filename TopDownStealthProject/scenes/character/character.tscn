@@ -4,16 +4,15 @@
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_f7rvo"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_020mh"]
-radius = 11.0
 height = 46.0
 
 [node name="Character" type="CharacterBody2D"]
-position = Vector2(2.08165e-12, 2.08165e-12)
+position = Vector2(2.06, -0.91)
 script = ExtResource("1_f7rvo")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_bcwbh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.59979, 0.60022)
+position = Vector2(-2, 1)
 shape = SubResource("CapsuleShape2D_020mh")
