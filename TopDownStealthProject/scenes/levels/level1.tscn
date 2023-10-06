@@ -94,9 +94,11 @@ texture_region_size = Vector2i(64, 64)
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(23.25, -32, 28.5, -32, 28.5, 32, 23.5, 32)
 2:1/0 = 0
 2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -28.25, 32, -28.25, 32, -23.75, -32, -23.75)
 3:1/0 = 0
 3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:1/0/physics_layer_0/angular_velocity = 0.0
@@ -1641,10 +1643,14 @@ sources/0 = SubResource("TileSetAtlasSource_23to4")
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Character" parent="." instance=ExtResource("1_w657y")]
-position = Vector2(568, 315)
+[node name="Level" type="Node2D" parent="."]
 
-[node name="Walls" type="TileMap" parent="."]
+[node name="Walls" type="TileMap" parent="Level"]
+scale = Vector2(2, 2)
 tile_set = SubResource("TileSet_6i3me")
 format = 2
-layer_0/tile_data = PackedInt32Array(0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 65540, 0, 0, 65539, 0, 0, 65538, 0, 0, 65537, 0, 0, 65536, 0, 0, 131072, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 131076, 0, 0, 196612, 0, 0, 131075, 0, 0, 131074, 0, 0, 131073, 0, 0)
+layer_0/tile_data = PackedInt32Array(0, 0, 1, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 65540, 0, 0, 65539, 0, 0, 65538, 0, 0, 65537, 0, 0, 65536, 0, 1, 131072, 0, 1, 196608, 0, 1, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 131076, 0, 0, 196612, 0, 0, 131075, 0, 0, 131074, 0, 0, 131073, 0, 0)
+
+[node name="Character" parent="." instance=ExtResource("1_w657y")]
+position = Vector2(300, 230)
+scale = Vector2(1, 1)

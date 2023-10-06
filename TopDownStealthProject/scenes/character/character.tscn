@@ -8,6 +8,7 @@ height = 46.0
 
 [node name="Character" type="CharacterBody2D"]
 position = Vector2(2.06, -0.91)
+scale = Vector2(2, 2)
 script = ExtResource("1_f7rvo")
 
 [node name="Sprite" type="Sprite2D" parent="."]
